@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CanvasApp</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #button{
+            text-align: center;
+            font-size: large;
+            font-weight: bold;
+            width: 70%;
+            margin: 0 auto;
+            padding: 20px 0;
+            /*background: linear-gradient(135deg,rgba(236, 32, 39, .6),rgba(126, 16, 131, .6),rgba(55, 66, 252, .6));*/
+            background: #be86c8;
+            transition: all .4s;
+        }
+        #button:hover{
+            transform: translateY(-2px);
+            border-radius: 20px;
+            cursor: pointer;
+            opacity: .8;
+            box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+            background: #7cc8e9;
+            /*background: linear-gradient(135deg,rgba(126, 16, 131, .6),rgba(55, 66, 252, .6), rgba(236, 32, 39, .6));*/
+        }
+        #canvas{
+            background: gray;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div id="button">CLEAR</div>
+
+    <script src="index.js"></script>
+</body>
+</html>
